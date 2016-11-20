@@ -1,0 +1,67 @@
+body{
+    background: #f6f6f6;
+}
+.jd-header-list{
+
+}
+.jd-header-warp{
+    height:30px;
+}
+.jd-search-area{
+    height:140px;
+}
+.jd-search-area .w-wrap{
+}
+#logo{
+    width:190px;
+    height:170px;
+    left:0;
+    top:-30px;
+    line-height:170px;
+}
+.jd-search-inner-wrap{
+    height:60px;
+    width:100%;
+    left:0;
+    top:0;
+}
+.jd-grid-wrap{
+    height:480px;
+    margin-bottom:10px;
+}
+.jd-seckill-wrap{
+    height:305px;
+}
+.jd-fbt-wrap{
+    height:444px;
+}
+.jd-coupon-wrap{
+    height:215px;
+}
+.jd-rec1-wrap{
+    height:100px;
+}
+.jd-lives-wrap{
+    height:578px;
+}
+.jd-portal-wrap{
+    height:523px;
+}
+.jd-entry-wrap{
+    height:405px;
+}
+.jd-spec-wrap{
+    height:195px;
+}
+.jd-more-wrap{
+    height:6555px;
+}
+.jd-service-wrap{
+    height:103px;
+}
+.jd-copyright-wrap{
+    height:193px;
+}
+.jd-help-wrap{
+    height:200px;
+}
