@@ -60,6 +60,36 @@ body{
     background:red;
     color:#fff;
 }
+.header-login-link{
+    left:244px;
+    top:0;
+    line-height: 26px;
+}
+.header-login-link:hover{
+    color:#c81623;
+}
+.header-myjd{
+    width:280px;
+    height:190px;
+    background:#fff;
+    right:125px;
+    top:30px;
+    z-index: 2;
+}
+.header-myjd-top{
+    height:70px;
+    padding:10px 15px;
+}
+.header-myjd-tx{
+    width:60px;
+    height:60px;
+    background:#0a628f;
+    border-radius:50%;
+}
+.header-myjd-r{
+    width:124px;
+    height:60px;
+}
 
 .header-right-list{
     left:28px;
@@ -67,13 +97,21 @@ body{
 .header-right-list li{
     width:84px;
     height:30px;
-    padding:0 5px;
+    padding:0 0 0 5px;
     color:#999;
 }
 .header-right-list li a{
     line-height:26px;
     color:#999;
     width:90%;
+}
+.icon-angle-down{
+    left: -3px;
+    top: 1px;
+    font-size:15px;
+}
+.hoverStyle:hover{
+    color:#c81623;
 }
 
 .jd-search-area{

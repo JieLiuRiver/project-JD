@@ -5,7 +5,8 @@
         data: function(){
             var configData = {
                 provinceData : null,
-                isHoverStatus : false
+                isHoverStatus : false,
+                myjdHoverStatus : false
             };
             /*获取省数据*/
             $.post('base/data/province.json', function(resp){
@@ -19,6 +20,12 @@
             },
             hoverLeave : function(){
                 this.isHoverStatus = false;
+            },
+            myjdHoverAction : function(){
+                this.myjdHoverStatus = true;
+            },
+            myjdHoverLeave : function(){
+                this.myjdHoverStatus = false;
             }
         }
     });

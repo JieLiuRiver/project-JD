@@ -113,14 +113,23 @@
 
             <div class="am-u-sm-9 h30">
                 <ul class="header-right-list am-cf pr">
-                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">网站导航 <i class="icon-angle-down"></i></a></li>
-                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">客户服务 <i class="icon-angle-down"></i></a>|</li>
-                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">企业采购</a>|</li>
-                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">京东会员</a>|</li>
-                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">我的京东 <i class="icon-angle-down"></i></a>|</li>
-                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">我的订单</a>|</li>
-                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">免费注册</a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">网站导航 <i class="icon-angle-down pr"></i></a></li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">客户服务 <i class="icon-angle-down pr"></i></a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center hoverStyle"  href="javascript:;">企业采购</a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center hoverStyle"  href="javascript:;">京东会员</a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center hoverStyle" style="border-bottom:0"  href="javascript:;" v-on:mouseover="myjdHoverAction" v-bind:class="{'pHoverStyle b_ccc' : myjdHoverStatus }" v-on:mouseout="myjdHoverLeave">我的京东 <i class="icon-angle-down pr"></i></a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center hoverStyle"  href="javascript:;">我的订单</a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;" style="color:#c81623;">免费注册</a>|</li>
                 </ul>
+                <a href="javascript:;" class="in_bl h am-md-text-center pa header-login-link c_999">你好, 请登录</a>
+                <div class="pa b_ccc header-myjd" style="border-top:0">
+                      <div class="header-myjd-top w am-cf">
+                          <a href="javascript:;" class="in_bl header-myjd-tx am-fl"></a>
+                          <div class="am-fl header-myjd-r h pr">
+                              <a href="javascript:;" class="in_bl  am-md-text-center pa c_999">你好, 请登录</a>
+                          </div>
+                      </div>
+                </div>
             </div>
 
         </div>
