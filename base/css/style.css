@@ -17,7 +17,6 @@ body{
     height:31px;
     right:48px;
     top:0;
-    background:#fff;
     border-bottom: 0;
     z-index: 2;
 
@@ -42,7 +41,6 @@ body{
     left: 192px;
     background:#fff;
     padding:12px 18px;
-    padding-left: 4px;
 }
 .posi-all a{
     line-height:24px;
@@ -55,9 +53,28 @@ body{
     height:24px;
     margin-bottom:4px;
 }
+.pHoverStyle{
+    background:#fff;
+}
+.posi-all ul li .active{
+    background:red;
+    color:#fff;
+}
 
-
-
+.header-right-list{
+    left:28px;
+}
+.header-right-list li{
+    width:84px;
+    height:30px;
+    padding:0 5px;
+    color:#999;
+}
+.header-right-list li a{
+    line-height:26px;
+    color:#999;
+    width:90%;
+}
 
 .jd-search-area{
     height:140px;

@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="//www.jd.com/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="base/css/reset.css">
+    <link rel="stylesheet" href="base/css/font-awesome.css">
     <link rel="stylesheet" href="base/css/amazeui.css">
     <link rel="stylesheet" href="base/css/style.css">
 </head>
@@ -97,20 +98,31 @@
         <div class="am-nav am-nav-pills jd-header-list w-wrap am-g">
             <div class="am-u-sm-3 h30 pr">
 
-                <div class="posi pa text-center b_ccc">
+                <div class="posi pa text-center" v-on:mouseover="hoverAction" v-on:mouseout="hoverLeave"  v-bind:class="{'pHoverStyle b_ccc' : isHoverStatus}">
                     <i class="icon-pos in_bl pa"></i>
                     <span class="posi-title f12 in_bl pa c_999" data-id="" title="广东">广东</span>
                 </div>
 
-
-                <div class="posi-all b_ccc pa">
+                <div class="posi-all b_ccc pa" v-bind:class="{'am-hide' : !isHoverStatus, 'am-show' : isHoverStatus }" v-on:mouseover="hoverAction"  v-on:mouseout="hoverLeave" >
                     <ul class="w h p0 am-avg-sm-5 boxes">
-                        <li v-for="item in provinceData"><a href="javascript:;"  v-bind:id="provinceData.id"  class="c_999 in_bl w h tc">{{ item.name }}</a></li>
+                        <li v-for="item in provinceData"><a href="javascript:;" v-bind:class="{'active' : item.isActive}"  v-bind:id="provinceData.id"  class="c_999 in_bl w h tc">{{ item.name }}</a></li>
                     </ul>
                 </div>
 
             </div>
-            <div class="am-u-sm-9 h30">9</div>
+
+            <div class="am-u-sm-9 h30">
+                <ul class="header-right-list am-cf pr">
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">网站导航 <i class="icon-angle-down"></i></a></li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">客户服务 <i class="icon-angle-down"></i></a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">企业采购</a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">京东会员</a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">我的京东 <i class="icon-angle-down"></i></a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">我的订单</a>|</li>
+                    <li class="am-fr"><a class="in_bl h  am-md-text-center"  href="javascript:;">免费注册</a>|</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </script>

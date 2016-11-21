@@ -4,7 +4,8 @@
         template : '#jd-header-template',
         data: function(){
             var configData = {
-                provinceData : null
+                provinceData : null,
+                isHoverStatus : false
             };
             /*获取省数据*/
             $.post('base/data/province.json', function(resp){
@@ -13,9 +14,15 @@
             return configData;
         },
         methods : {
-
+            hoverAction : function(){
+                this.isHoverStatus = true;
+            },
+            hoverLeave : function(){
+                this.isHoverStatus = false;
+            }
         }
     });
+
     Vue.component('jd-search', {
         template : '#jd-search-template'
     });
