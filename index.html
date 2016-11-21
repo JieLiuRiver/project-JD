@@ -88,12 +88,29 @@
         <jd-copyright></jd-copyright>
     </div>
 
-    <!-- 导航部分 -->
+
+
+
+<!-- 导航部分 -->
 <script type="text/x-template" id="jd-header-template">
     <div class="jd-header-warp">
         <div class="am-nav am-nav-pills jd-header-list w-wrap am-g">
-            <div class="am-u-sm-3 am-btn-primary h30">3</div>
-            <div class="am-u-sm-9 am-btn-success h30">9</div>
+            <div class="am-u-sm-3 h30 pr">
+
+                <div class="posi pa text-center b_ccc">
+                    <i class="icon-pos in_bl pa"></i>
+                    <span class="posi-title f12 in_bl pa c_999" data-id="" title="广东">广东</span>
+                </div>
+
+
+                <div class="posi-all b_ccc pa">
+                    <ul class="w h p0 am-avg-sm-5 boxes">
+                        <li v-for="item in provinceData"><a href="javascript:;"  v-bind:id="provinceData.id"  class="c_999 in_bl w h tc">{{ item.name }}</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="am-u-sm-9 h30">9</div>
         </div>
     </div>
 </script>
@@ -129,7 +146,6 @@
     </div>
 </script>
 
-
 <!-- fbt -->
 <script type="text/x-template" id="jd-fbt-template">
     <div class="jd-fbt-wrap mb30">
@@ -138,7 +154,6 @@
         </div>
     </div>
 </script>
-
 
 <!-- coupon -->
 <script type="text/x-template" id="jd-coupon-template">
@@ -185,7 +200,6 @@
     </div>
 </script>
 
-
 <!-- 购特色 -->
 <script type="text/x-template" id="jd-spec-template">
     <div class="jd-spec-wrap mb30">
@@ -204,7 +218,6 @@
     </div>
 </script>
 
-
 <!-- mod_service -->
 <script type="text/x-template" id="jd-service-template">
     <div class="jd-service-wrap mb30">
@@ -213,7 +226,6 @@
         </div>
     </div>
 </script>
-
 
 <!-- mod_help -->
 <script type="text/x-template" id="jd-help-template">
@@ -224,7 +236,6 @@
     </div>
 </script>
 
-
 <!-- copyright -->
 <script type="text/x-template" id="jd-copyright-template">
     <div class="jd-copyright-wrap mb30">
@@ -234,7 +245,13 @@
     </div>
 </script>
 
-    <script src="base/js/vue.js"></script>
+<!-- jd-ppanel -->
+<script type="text/x-template" id="jd-ppanel-template">
+    <h1>panel</h1>
+</script>
+
+<script src="base/js/jquery-1.8.1.js"></script>
+<script src="base/js/vue.js"></script>
 <script src="base/js/app.js"></script>
 </body>
 </html>

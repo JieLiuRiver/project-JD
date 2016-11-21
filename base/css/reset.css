@@ -19,7 +19,7 @@ del,ins,u,s,a,a:hover{text-decoration:none;}
 body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
 body{background:#fff;}
 a,a:hover{color:#333;}
-body{ font-family:"YaHei Consolas Hybrid" !important;}
+body{ font-family:"YaHei Consolas Hybrid" !important; font-size:12px !important;}
 /*文字排版*/
 .f12{font-size: 12px !important;}
 .f13{font-size: 13px}
@@ -166,3 +166,7 @@ body{ font-family:"YaHei Consolas Hybrid" !important;}
 .c_3{ color:#333 !important;}
 .c_0{ color:#000 !important;}
 .bg_f60{ background:#ff7519; }
+.c_999{ color:#999}
+.b_ccc{ border:1px solid #ccc;}
+.m0{ margin:0;}
+.p0{ padding:0;}
